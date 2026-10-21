@@ -1,0 +1,15 @@
+# Pastas locais e metadados
+.agents/
+workspace/
+skills/
+plugin/
+tools/
+desktop.ini
+
+# Repos git embutidos dentro de skills vendorizadas
+**/.git/
+
+# Artefatos de build e dependências
+node_modules/
+dist/
+*.tsbuildinfo
