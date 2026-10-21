@@ -1,8 +1,7 @@
-﻿{
+{
     "tag":  "v1.0.0",
     "version":  "1.0.0",
     "sha256":  "E09E750C99273B2899E3DE60B29CB1336ED9506F696D5941DDEB9C3A5BEDC609",
     "download_url":  "https://github.com/nickcatsshild/Shadow/releases/download/v1.0.0/Shadow-v1.0.0-Portable-Win-x64.zip",
-    "exe_url":  "https://github.com/nickcatsshild/Shadow/releases/download/v1.0.0/Shadow.exe",
     "release_date":  "2026-10-21T11:31:39Z"
 }

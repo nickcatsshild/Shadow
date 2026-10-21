@@ -16,10 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/nickcatsshild/Shadow/releases/latest">
-    <img src="https://img.shields.io/badge/Download-Shadow.exe%20(v1.0.0%20Portátil)-2f9fe0?style=for-the-badge&logo=windows&logoColor=white" alt="Download Shadow.exe">
-  </a>
-  <a href="https://github.com/nickcatsshild/Shadow/releases/latest">
-    <img src="https://img.shields.io/badge/Download-Shadow--Portable.zip-10222e?style=for-the-badge&logo=zip&logoColor=white" alt="Download Shadow Portable ZIP">
+    <img src="https://img.shields.io/badge/Download-Shadow--Portable.zip%20(v1.0.0)-2f9fe0?style=for-the-badge&logo=windows&logoColor=white" alt="Download Shadow Portable ZIP">
   </a>
 </p>
 
@@ -27,31 +24,43 @@
 
 ## 💾 Como Baixar e Usar (100% Portátil)
 
-O **Shadow Core** é um aplicativo 100% portátil para Windows — não requer instalação, privilégios administrativos ou alterações no Registro do sistema:
+O **Shadow Core** é um aplicativo 100% portátil para Windows — não requer instalador, privilégios administrativos ou alterações no Registro do sistema:
 
 1. Acesse as **[Releases Oficiais no GitHub](https://github.com/nickcatsshild/Shadow/releases/latest)**.
-2. Baixe o pacote **`Shadow-Portable-Win-x64.zip`** ou o executável **`Shadow.exe`**.
-3. Extraia o conteúdo em qualquer diretório de sua preferência (ex.: `C:\Shadow`, `D:\Shadow` ou em um pendrive portátil).
-4. Dê duplo clique em `Shadow.exe` — o aplicativo inicializa em menos de 300ms com todas as capacidades locais ativas!
+2. Baixe o pacote portátil **`Shadow-v1.0.0-Portable-Win-x64.zip`**.
+3. Extraia o conteúdo completo do arquivo ZIP em qualquer pasta de sua preferência (ex.: `C:\Shadow`, `D:\Shadow` ou em um pendrive).
+4. Dê duplo clique no executável **`Shadow.exe`** dentro da pasta extraída — o aplicativo inicializa em menos de 300ms com todas as capacidades locais ativas!
 
 ---
 
-## 🦀 Nova Arquitetura Oficial: Casca Nativa em Rust & Tauri v2
+## 🗺️ Roadmap de Plataformas
 
-O **Shadow Core** opera sobre uma arquitetura nativa em **Rust com Tauri v2**, substituindo integralmente a antiga casca em Electron. Essa evolução elimina o peso de instâncias completas do Chromium empacotado e garante máxima velocidade, segurança e eficiência no consumo de recursos.
+| Plataforma | Status | Formato / Runtime Planejado |
+|---|---|---|
+| **Windows 10 / 11 (x64)** | **✅ Disponível (Produção Oficial)** | Pacote Portátil ZIP (`Shadow.exe` + WebView2) |
+| **Linux (Ubuntu & Debian)** | **⏳ Em Desenvolvimento (Roadmap Futuro)** | Pacotes `.deb` e `AppImage` portáteis nativos (WebKitGTK 4.1) |
+| **Android** | **📱 Planejado (Roadmap Futuro)** | APK nativo via Tauri Mobile v2 + Mobile Companion PWA |
+| **macOS** | **🔍 Sob Avaliação Técnica** | Pacote `.dmg` nativo via WebKit / Cocoa |
 
-### 📊 Comparativo de Performance
+---
 
-| Métrica / Recurso | Electron (Legado) | Tauri v2 / Rust (Atual Oficial) | Ganho |
-|---|---|---|---|
-| **Tamanho do Executável** | 220,8 MB | **52,3 MB** | **-76% de redução** |
-| **Consumo de Memória (RAM Inativa)** | ~450 MB | **~85 MB** | **-81% de economia** |
-| **Tempo de Inicialização (Cold Start)** | ~2,8 segundos | **< 300 ms** | **9x mais veloz** |
-| **Inicialização Visual** | Flash de tela cinza/branca | **Exibição determinística (zero flash)** | Experiência fluida |
-| **Motor de Renderização** | Chromium empacotado | **Microsoft Edge WebView2 nativo** | Runtime do SO |
-| **Painel Lateral Docked** | Janela pesada recriada | **Janela Rust magnetizada (<10ms)** | Instantânea |
-| **Navegação Web Externa** | `<webview>` com limitações | **`WebviewWindow` nativa dedicada** | Bypass `X-Frame-Options` |
-| **Lógica Administrativa** | Acoplada ao main process | **`@shadow-ai/admin-core` isolado** | 100% desacoplado |
+## 🦀 Arquitetura Oficial: Casca Nativa em Rust & Tauri v2
+
+O **Shadow Core** opera com uma arquitetura de alta performance desenvolvida em **Rust com Tauri v2** e renderização via **Microsoft Edge WebView2 nativo**. A aplicação é 100% auto-contida, sem runtime pesado de navegador embutido e com inicialização determinística sem flash de tela.
+
+### ⚡ Métricas e Especificações de Performance
+
+| Métrica / Recurso | Especificação Nativa | Benefício |
+|---|---|---|
+| **Tamanho do Pacote** | **52,3 MB** (instalador portátil auto-contido) | Download leve e portátil |
+| **Consumo de Memória (RAM Inativa)** | **~85 MB** (processo Rust + WebView2) | Quase zero impacto no sistema |
+| **Tempo de Inicialização (Cold Start)** | **< 300 ms** com pré-renderização em memória | Abertura instantânea |
+| **Inicialização Visual** | **Zero flash** (exibição determinística via `app-ready`) | Experiência visual fluida |
+| **Motor de Renderização** | **Microsoft Edge WebView2 (Evergreen)** | Desempenho e segurança nativos |
+| **Painel Lateral Docked** | **Janela magnetizada em Rust (<10ms)** | Acoplamento dinâmico à janela principal |
+| **Navegação Web Integrada** | **`WebviewWindow` nativa dedicada** | Suporte irrestrito a portais modernos |
+| **Lógica Administrativa & IA** | **`@shadow-ai/admin-core` 100% desacoplado** | Módulos puros em TypeScript |
+| **Zero Python** | **100% nativo** (Rust, C++, TypeScript e WASM) | Zero dependência de runtimes externos |
 
 ---
 
