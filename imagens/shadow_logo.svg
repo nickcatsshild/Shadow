@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Shadow Core">
+  <title>Shadow Core</title>
+  <defs>
+    <!-- fundo escuro grafite: transmite seriedade sem parecer morto -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1a1f28"/>
+      <stop offset="55%"  stop-color="#0f1319"/>
+      <stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+
+    <!-- acento cyan (segurança/tech) usado só na borda e no glow -->
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7fdcff"/>
+      <stop offset="100%" stop-color="#0e8ec4"/>
+    </linearGradient>
+
+    <!-- glow suave por trás do S -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#22b8f0" stop-opacity="0.45"/>
+      <stop offset="60%"  stop-color="#22b8f0" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#22b8f0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- brilho superior sutil no metal do S -->
+    <linearGradient id="sBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="45%"  stop-color="#e6ecf1"/>
+      <stop offset="100%" stop-color="#a8b0b8"/>
+    </linearGradient>
+
+    <linearGradient id="sHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Escudo (squircle) — protege a marca, transmite estabilidade -->
+  <rect x="24" y="24" width="464" height="464" rx="112" ry="112" fill="url(#bg)"/>
+
+  <!-- Borda cyan discreta (o único acento colorido do escudo) -->
+  <rect x="24" y="24" width="464" height="464" rx="112" ry="112"
+        fill="none" stroke="url(#edge)" stroke-width="6"/>
+
+  <!-- Glow atrás do S -->
+  <ellipse cx="256" cy="256" rx="185" ry="185" fill="url(#glow)"/>
+
+  <!-- S geométrico bold: curvas cheias, sem enfeites. Legível em 16px. -->
+  <path d="
+    M 356 168
+    C 356 132, 322 106, 268 106
+    L 232 106
+    C 178 106, 148 138, 148 184
+    C 148 226, 178 246, 224 254
+    L 288 266
+    C 322 272, 344 288, 344 320
+    C 344 358, 314 386, 260 386
+    C 210 386, 172 366, 156 328"
+    fill="none"
+    stroke="url(#sBody)"
+    stroke-width="66"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- Highlight superior no S (sensação de metal polido) -->
+  <path d="
+    M 356 168
+    C 356 132, 322 106, 268 106
+    L 232 106
+    C 178 106, 148 138, 148 184"
+    fill="none"
+    stroke="url(#sHighlight)"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.6"/>
+</svg>
