@@ -143,6 +143,23 @@ O Shadow Core foi projetado para ser atualizado sem complicações:
 2. Se uma nova versão for detectada, o aplicativo exibe o resumo das novidades e o botão para baixar e atualizar os binários automaticamente.
 3. Não há necessidade de reinstalação: as pastas de dados do usuário (`data/`, `workspace/`, `memory/`) são preservadas de forma intacta.
 
+## ☕ Apoie o Desenvolvimento (Pague um Café de $5)
+
+O **Shadow Core** é um projeto de código aberto, autônomo e independente, desenvolvido com dedicação para entregar uma ferramenta de desktop de alta performance, 100% nativa e sem amarras de nuvem ou assinaturas forçadas.
+
+Se o Shadow está sendo útil para você, economizando seu tempo ou acelerando seus projetos, considere contribuir com **$5 dólares (o valor de um café)** para apoiar o desenvolvedor e manter o projeto evoluindo a todo vapor!
+
+<p align="center">
+  <a href="https://github.com/sponsors/nickcatsshild">
+    <img src="https://img.shields.io/badge/Apoiar%20com%20$5-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors">
+  </a>
+  <a href="https://ko-fi.com/nickcatsshild">
+    <img src="https://img.shields.io/badge/Pagar%20um%20Café%20($5)-Ko--fi-ff5e5b?style=for-the-badge&logo=kofi&logoColor=white" alt="Ko-fi">
+  </a>
+</p>
+
+> Toda contribuição é investida diretamente na infraestrutura de testes, suporte a novos modelos locais, testes de hardware e no café que mantém as sessões de código produtivas. Muito obrigado pelo seu apoio! 💙
+
 ---
 
 ## 📜 Licença
